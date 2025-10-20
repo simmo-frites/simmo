@@ -21,7 +21,7 @@ export const handler: Handlers = {
     console.log(form);
     const projectSettings: ProjectSettings = {
       yearlyLoanRate: Number(form.get("yearly-loan-rate")) || 3,
-      loanDuration: Number(form.get("total-duration")) || 30,
+      loanDuration: Number(form.get("loan-duration")) || 30,
       totalAmount: Number(form.get("total-amount")) || 100000,
       netMonthlyIncome: Number(form.get("net-monthly-income")) || 0,
     };
